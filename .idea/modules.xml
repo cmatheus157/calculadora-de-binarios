@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/calculadora_de_binario.iml" filepath="$PROJECT_DIR$/calculadora_de_binario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/calculadora_de_binario_android.iml" filepath="$PROJECT_DIR$/android/calculadora_de_binario_android.iml" />
+    </modules>
+  </component>
+</project>
