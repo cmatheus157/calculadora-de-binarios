@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: InputDecoration(
                   hintText: '',
                   labelText: 'insira a valor em binario ',
-                   labelStyle: TextStyle(fontSize: 20),
+                  labelStyle: TextStyle(fontSize: 20),
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: InputDecoration(
                   hintText: '',
                   labelText: 'insira a valor em binario ',
-                   labelStyle: TextStyle(fontSize: 20),
+                  labelStyle: TextStyle(fontSize: 20),
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -109,26 +109,25 @@ class _MyHomePageState extends State<MyHomePage> {
               print(val2);
 
               setState(() {
-                
-              switch (operacao.text) {
-                case '+':
-                  resultado = val1 + val2;
-                  break;
-                case '-':
-                  resultado = val1 - val2;
-                  break;
-                case '*':
-                  resultado = val1 * val2;
-                  break;
-                case '/':
-                  var res = val1 / val2;
-                  resultado = res.toInt();
-                  
-                  break;
-                case '%':
-                  resultado = val1 % val2;
-                  break;
-              }
+                switch (operacao.text) {
+                  case '+':
+                    resultado = val1 + val2;
+                    break;
+                  case '-':
+                    resultado = val1 - val2;
+                    break;
+                  case '*':
+                    resultado = val1 * val2;
+                    break;
+                  case '/':
+                    var res = val1 / val2;
+                    resultado = res.toInt();
+
+                    break;
+                  case '%':
+                    resultado = val1 % val2;
+                    break;
+                }
               });
               print(resultado);
               print(resultado.toBinary().toString());
@@ -136,8 +135,8 @@ class _MyHomePageState extends State<MyHomePage> {
               // print(resultado.toBinary().toString());
             },
           ),
-            
-          Center(child: Text('O resultado é : '+resultado.toBinary().toString()))
+          Center(
+              child: Text('O resultado é : ' + resultado.toBinary().toString()))
         ],
       ),
     );
